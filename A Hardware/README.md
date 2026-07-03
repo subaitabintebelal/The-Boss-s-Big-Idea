@@ -1,11 +1,15 @@
 Summary:
 1. Connected all VCC pins of Relay in 5V
 2. Connected all GND pins of Relay in Ground
-3. Connected all IN pins of Relay in seperate ESP32
+3. Connected all IN pins of Relay in seperate ESP32 pins
+4. Connected all COM pins of Relay in 5V
+5. Connected all NO pins of Relay with LED Anode
+6. Connected all LED Cathode with Resistor and all the Resistor connects with ground
+7. Connected ESP32 VCC with 5V and GND with Ground
 
+TestCode(sketch.ino): The LED of relay and the corresponding LEDs turns ON in following manner: LIGHT1->LIGHT2->LIGHT3->FAN1->FAN2 and then all 5 devices together. Thats how by integrating software with this hardware we can understand which device is ON/OFF.
 
 Detailed Explaination:
-
 Device 1 — Light 1 (GPIO 4)
 Step 1 — ESP32 GPIO4 → Relay1 IN
 Step 2 — ESP32 5V (labeled VIN on the DevKit) → Relay1 VCC

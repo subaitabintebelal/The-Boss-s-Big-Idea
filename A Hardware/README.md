@@ -1,4 +1,7 @@
-
+Summary:
+1. Connected all VCC pins of Relay in 5V
+2. Connected all GND pins of Relay in Ground
+3. Connected all IN pins of Relay in seperate ESP32
 
 
 Detailed Explaination:
